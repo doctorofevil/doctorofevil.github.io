@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0; 
+    padding: 0;
+
+    color: #222;   
+
+	font: 100% Arial, Sans Serif;
+
+	overflow-x: hidden;
+}
+/* div stuff */
+.hstack{
+    display: inline-flex;
+    flex-direction: row;
+  }
+ .vstack{
+    display: inline-flex;
+    flex-direction: column;
+ }
+ .stack{
+    display: inline-block;
+ }
+ 
+ .wrapleft{
+    display: flex; 
+    flex-wrap: wrap; 
+    float: left;
+  }
+ .wrapright{
+    display: flex; 
+    flex-wrap: wrap; 
+    float: right;
+ }
+ .center{
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .banner100{
+    width: 100%;
+ }
+ .banner50{
+    width: 50%;
+ }
+ .banner25{
+    width: 25%;
+ }
+
+ .hidden{
+    display: none;
+ }
+ 
+ .banner{
+    height: fit-content;
+    min-height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .topbanner{
+    padding-top: 30px;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+ }
+.padten{
+    padding: 10px;
+}
+ .margintenlr{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+ .padlr{
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+ .padtop{
+    padding-top: 30px;
+ }
+
+ /* text position */
+.lefttext{
+    text-align: left;
+    max-width: 500px;
+ }
+ .righttext{
+    text-align: right;
+    max-width: 500px;
+ }
+ .centertext{
+    text-align: center;
+    max-width: 500px;
+ }
+ .floatleft{
+    float: left;
+ }
+ .floatright{
+    float: right;
+ }
+
+/* text styles */
+p{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.title{
+    font-size: 5vw;
+    font-style: italic;
+    margin: 0; 
+    padding: 0;
+}
+.subtitle{
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.white{
+    color: white;
+}
+
+/* colors */
+.bcolorone{
+    background-color: #4CB3F9;
+}
+.bcolortwo{
+    background-color: #4879D1;
+}
+.bcolorthree{
+    background-color: #1155ccff;
+}
+.bcolorfour{
+    background-color: #254682;
+}
+.bcolorfive{
+    background-color: #131416;
+}
+
+
+.nav{
+    background-color: white;
+    border: 1px solid black;
+} 
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px; 
+    min-width: 100px;
+    font-size: large;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a{
+    color: #333;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.leftline{
+    border-left: 1px solid black;
+}
+.rightline {
+    border-right: 1px solid black;
+}
+
+h1{
+    font-weight: bold; 
+    font-size: 10vw;
+    margin: 0px;
+    padding: 0px;
+    align-self: flex-end;
+}
+
+.mw300{
+    max-width: 300px;
+    width: 30%;
+    object-fit: contain;
+}
+.fish{
+    max-height: 100;
+}
